@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #005e9c;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+  }
+
+
+  .colortexto {
+    font-family: Arial, sans-serif;
+    text-align: center;
+   color: #ff7b00;
+   text-shadow: 1px 1px 2px rgb(0, 0, 0); /* Sombra sutil */
+}
+
+.colortexto2 {
+  text-align: center;
+  color: #108de0;
+}
+
+
+.colortexto3 {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0); /* Sombra sutil */
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+   
+    
+}
+
+.text-image-container {
+  display: flex;
+  justify-content: space-between; /* Para alinear el texto e imagen */
+  align-items: center; /* Centra verticalmente */
+  margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+.text-image-container p {
+  flex: 1; /* Permite que el texto ocupe el espacio disponible */
+  margin-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.text-image-container img {
+  max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+
+
+/*.infogeneral img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(248, 7, 7, 0.2);
+    display: flex;
+    justify-content: center; /* Para centrar las imágenes */
+    /* Espaciado entre las imágenes */
+/*/*/
+
+
+
+
+  .infogeneral {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #3C5B6F; /* Borde de color */
+    border-radius: 30px;
+    font-size: 1.1em;
+  }
+  
+ 
+  
+  .main-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    
+  }
+
+ 
+  
+  
+  /*.main-container p b {
+    color: #e07f10; /* Color especial para los textos en negrita */
+  
+  /*/*/
+  .main-container img {
+    width: 100%;
+    max-width:300px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    
+    justify-content: center; /* Para centrar las imágenes */
+    gap: 50px; /* Espaciado entre las imágenes */
+    border: 2px solid rgb(0, 0, 0); /* Ancho, estilo y color del borde */
+   
+  
+  }
+
+
+
+
+
+  .navbar {
+    background-color: #3C5B6F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .logo img {
+    height: 80px;
+    width: 100px;
+  }
+
+  .nav-links {
+    background-color: #322C2B;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border: 4px solid #3C5B6F;
+  }
+
+  .nav-links a {
+    color: #DFD0B8;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+
+  .section-header{     /*es la seccion de encabezados, como ladrillo, encadenado etc/**/
+ 
+ max-width: 800px;
+ width: 100%;
+ margin: 10px;
+ padding: 40px; /* Aumentar el padding para mayor altura */
+ background-color: #108de0;
+ color: white;
+ border-radius: 12px;
+ cursor: pointer;
+ text-align: center;
+ /*background-image: url('ladrillos.jpg'); /* Cambia esto por la ruta de tu imagen */
+ background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+ background-position: center; /* Centra la imagen */
+ font: optional;
+ margin-bottom: 0px;
+
+ font-weight: 800; /* Extra bold (ajusta según la fuente utilizada) */
+    font-style: italic;
+
+}
+
+
+
+
+
+
+
+   .section-content { /*es lo que esta dentro de los encabezados de secciones /**/
+    display: none;
+    padding: 20px;
+    background-color: rgb(240, 126, 32);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 0px auto; /* Reducimos el margen superior */
+    
+  }
+
+  .section-content.open {
+    display: block;
+ 
+  }
+
+  .infogeneral ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+
+
+/*footercss*/
+.footer {
+    background-color: #3C5B6F;
+    color: #DFD0B8;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #322C2B;
+}
+.footer .social_media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+.footer .social_media a {
+    color: #DFD0B8;
+    text-decoration: none;
+    margin: 0 7px;
+    transition: color 0.3s;
+    padding: 10px;
+}
+ 
+.footer .social_media a:hover {
+    color: #A8C0CC;
+}
+
+.footer .telefono {
+    font-size: 1.1em;
+    font-weight: bold; /* Negrita */
+}
+
+.derechos{
+    font-size: 0.7em;
+}
+
+
+.Bloquedepasos-section {  /*bloque con estilo de los pasos como 1,2,3/*/
+    padding: 15px; 
+    background-color: #2dbeeb;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    
+    font-weight: 800; /* Extra bold (ajusta según la fuente utilizada) */
+    font-style: italic;
+    text-decoration-color: black;
+   
+    } 
+
+.step-content {    /*bloque con estilo del contenido DENTRO de los pasos como 1,2,3/*/
+    display: none;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 10px 10px;
+ 
+
+
+    
+}
+
+
+.step-content.open {
+    display: block;
+}
+
